@@ -24,3 +24,11 @@
 
   </div>
 </div>
+
+<app-modal
+  *ngIf="shouldOpenModal"
+  type="Sucesso!"
+  message="Cadastro concluído"
+  (closeEvent)="closeModal($event)"
+>
+</app-modal>

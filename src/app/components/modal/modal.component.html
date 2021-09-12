@@ -1,0 +1,32 @@
+<div class="modal-container">
+
+  <div class="modal-box">
+      <div class="modal-container-header">
+          <span [ngClass]="getClassByType()">
+              {{type}}
+          </span>
+
+          <button class="modal-close-button"
+                  (click)="hideModal()">
+              <img style="height: 32px;"
+                  src="assets/icon_decline_nv1_gray(solid).svg"/>
+          </button>
+      </div>
+
+      <hr class="modal-separator"/>
+
+      <div class="modal-info">
+          <small>
+              {{message}}
+          </small>
+      </div>
+
+          <div class="modal-info-close-button">
+            <button (click)="hideModal()">
+              Fechar
+            </button>
+          </div>
+
+  </div>
+
+</div>

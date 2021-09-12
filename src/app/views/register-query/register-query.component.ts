@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-query',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterQueryComponent implements OnInit {
 
-  constructor() { }
+  shouldOpenModal: boolean = true;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  closeModal (event: any){
+    this.shouldOpenModal = false
+    this.router.navigate(['cadastrar-consulta']);
+  }
 }
