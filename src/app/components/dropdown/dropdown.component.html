@@ -1,0 +1,15 @@
+<div style="position: relative; width: auto">
+  <div id="select" [ngClass]="checkDropdownStyle()" (click)="setIsActive()" (mouseover)="focused()" (mouseleave)="removeFocused()">
+      <small class="text-active">
+    {{ defaultValue }}
+  </small>
+  </div>
+
+  <div *ngIf="isActive" class="dropdown-activated-container">
+      <div *ngFor="let value of values">
+          <p class="text-hidden" (click)="selectItem(value)">
+              {{ value }}
+          </p>
+      </div>
+  </div>
+</div>

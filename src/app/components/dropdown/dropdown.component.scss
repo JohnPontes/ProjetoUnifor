@@ -1,0 +1,162 @@
+.text-active {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text-hidden{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-container-white {
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #ffffff;
+box-shadow: 0px 3px 6px #00000014;
+border-radius: 12px;
+padding: 10px;
+color: #02abb8;
+font-family: "MontSerrat";
+font-weight: 600;
+cursor: pointer;
+}
+
+.dropdown-container-purple {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #00aebb;
+box-shadow: 0px 3px 6px #00000014;
+border-radius: 12px;
+padding: 10px;
+color: #fff;
+font-family: "MontSerrat";
+font-weight: 600;
+cursor: pointer;
+}
+
+.dropdown-container-white-hover {
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #02abb8;
+box-shadow: 0px 3px 6px #00000014;
+border-radius: 12px;
+padding: 10px;
+color: #ffffff;
+font-family: "MontSerrat";
+font-weight: 600;
+cursor: pointer;
+}
+
+.dropdown-container-activated {
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #fff;
+box-shadow: 0px 3px 6px #00000014;
+border-radius: 12px 12px 0px 0px;
+padding: 10px;
+color: #02abb8;
+font-family: "MontSerrat";
+font-weight: 600;
+cursor: pointer;
+}
+
+.dropdown-container-activated-purple {
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #0be0f0;
+box-shadow: 0px 3px 6px #00000014;
+border-radius: 12px 12px 0px 0px;
+padding: 10px;
+color: #fff;
+font-family: "MontSerrat";
+font-weight: 600;
+cursor: pointer;
+}
+
+.dropdown-container-activated-hover {
+width: 50%;
+height: 100%;
+display: flex;
+background: #02abb8;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0px 3px 6px #00000014;
+border-radius: 12px 12px 0px 0px;
+padding: 10px;
+color: #fff;
+font-family: "MontSerrat";
+font-weight: 600;
+cursor: pointer;
+}
+
+.dropdown-activated-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  background: #FFF;
+  color: #02abb8;
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0px 3px 6px #00000014;
+  width: 54%;
+  font-family: 'MontSerrat';
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.dropdown-activated-container > div {
+padding: 10px;
+}
+
+.dropdown-activated-container > div > p {
+margin: 0;
+}
+
+.dropdown-activated-container > div:hover {
+background: #0be0f0;
+color: #fff;
+}
+
+::-webkit-scrollbar {
+width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: #0be0f0;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: #0be0f0;
+}

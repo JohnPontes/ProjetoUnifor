@@ -7,6 +7,7 @@ import { RequestPasswordComponent } from './views/request-password/request-passw
 import { LoginComponent } from './views/login/login.component';
 import { RegisterQueryComponent } from './views/register-query/register-query.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ModalComponent } from './components/modal/modal.component';
     RequestPasswordComponent,
     LoginComponent,
     RegisterQueryComponent,
-    ModalComponent
+    ModalComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

@@ -2,33 +2,43 @@
   <div class="content">
     <div class="name">
       <label>Nome Completo</label>
-      <input type="text" placeholder="Informe seu nome completo"
-      onfocus="this.placeholder = ''"
-      onblur="this.placeholder = 'Informe seu nome completo'">
+      <input type="text" placeholder="Informe seu nome completo" onfocus="this.placeholder = ''"
+        onblur="this.placeholder = 'Informe seu nome completo'">
     </div>
 
     <div class="email">
       <label>Email</label>
-      <input type="text" placeholder="Infome o email cadastrado"
-      onfocus="this.placeholder = ''"
-      onblur="this.placeholder = 'Infome o email cadastrado'">
+      <input type="text" placeholder="Infome o email cadastrado" onfocus="this.placeholder = ''"
+        onblur="this.placeholder = 'Infome o email cadastrado'">
     </div>
 
     <div class="birth-date">
       <label>Data de Nascimento</label>
-      <input type="text" placeholder="Infome sua data de nascimento"
-      onfocus="this.placeholder = ''"
-      onblur="this.placeholder = 'Infome sua data de nascimento'">
+      <input type="text" placeholder="Infome sua data de nascimento" onfocus="this.placeholder = ''"
+        onblur="this.placeholder = 'Infome sua data de nascimento'">
     </div>
 
+    <div class="options">
+      <label>Opções de consultas</label>
+      <dropdown style="width: 25%" [values]="genderName" [theme]="'white'" [shouldListenHover]="true"
+        defaultValue="Clínico Geral">
+
+      </dropdown>
+    </div>
+    <div class="buttons">
+      <button class="request-password" (click)="navigateLogin()">
+        Voltar
+      </button>
+      <button class="enter-login" (click)="openModal()">
+        Enviar
+      </button>
+
+
+    </div>
 
   </div>
 </div>
 
-<app-modal
-  *ngIf="shouldOpenModal"
-  type="Sucesso!"
-  message="Cadastro concluído"
-  (closeEvent)="closeModal($event)"
->
+<app-modal *ngIf="shouldOpenModal" type="Sucesso!" message="Cadastro de consulta efetuado com sucesso!"
+  (closeEvent)="closeModal($event)">
 </app-modal>
