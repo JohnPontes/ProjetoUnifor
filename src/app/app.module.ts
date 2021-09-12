@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RequestPasswordComponent } from './views/request-password/request-password.component';
 import { LoginComponent } from './views/login/login.component';
+import { RegisterQueryComponent } from './views/register-query/register-query.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RequestPasswordComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterQueryComponent
   ],
   imports: [
     BrowserModule,

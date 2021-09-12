@@ -1,0 +1,17 @@
+.name, .email, .birth-date {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px 20px 40px;
+}
+
+input {
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000014;
+  padding: 7px;
+}
+
+input::placeholder {
+  padding-left: 120px;
+}

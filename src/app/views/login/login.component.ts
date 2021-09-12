@@ -20,4 +20,9 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/esqueceu-senha'])
   }
 
+  navigateRegisterQuery() {
+    this.router.navigate(['/cadastrar-consulta'])
+  }
+
+
 }
